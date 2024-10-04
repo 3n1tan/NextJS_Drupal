@@ -28,7 +28,7 @@ module.exports = {
       files: ["**/*.{ts,tsx}"],
       parser: "@typescript-eslint/parser",
       parserOptions: {
-        project: "tsconfig.json",
+        project: "./tsconfig.json",
       },
       env: {
         browser: true,
@@ -37,7 +37,6 @@ module.exports = {
       plugins: ["n", "simple-import-sort"],
       extends: [
         "eslint:recommended",
-        "@typescript-eslint/parser", // Remove this if you want to use the default parser.
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "next",
